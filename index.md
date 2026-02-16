@@ -17,12 +17,6 @@ I did my PhD at the University of Bristol from 2021-2025, supervised by Dr Laure
 ## Recent Blog Posts
 
 <ul>
-    <!-- <li>
-        <a href="blog/qwd.html"><strong>Quadratic Weight Decay (EXAMPLE, DO NOT PUBLISH)</strong></a>
-        <br>
-        <span class="date">January 2026</span> - Making weights decay super fast.
-    </li> -->
-    <!-- Placeholder to say coming soon -->
     <li>
     <a href="blog/example.html"><strong>Example Blog Post</strong></a>
     <br>
