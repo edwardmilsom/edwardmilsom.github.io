@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+$for(header-includes)$
+$header-includes$
+$endfor$
+<title>$if(pagetitle)$$pagetitle$$else$$if(title)$$title$$else$Document$endif$$endif$</title>
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<article>
+<h1>$title$</h1>
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+$if(description)$
+<p><em>$description$</em></p>
+$endif$
+<hr>
+$endif$
+$body$
+$if(title)$
+</article>
+$endif$
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>
