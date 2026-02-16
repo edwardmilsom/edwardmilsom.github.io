@@ -17,11 +17,11 @@ I did my PhD at the University of Bristol from 2021-2025, supervised by Dr Laure
 ## Recent Blog Posts
 
 <ul>
-    <li>
+    <!-- <li>
     <a href="blog/example.html"><strong>Example Blog Post</strong></a>
     <br>
     <span class="date">January 2026</span> - An example markdown file for a blog post.
-    </li>
+    </li> -->
     <li>
         <strong>Blog coming soon...</strong>
     </li>
