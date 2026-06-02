@@ -347,7 +347,10 @@ Tikhonov regularised polar map with Newton-Schulz) can be done almost
 trivially (see the later paragraph about adjusting
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span>
 based on the Frobenius normalisation) with no additional computational
-overhead.</p>
+overhead. We also wonder (though we haven’t tested this) whether added
+Tikhonov regularisation could alleviate the numerical issues that have
+been observed in Gram Newton-Schulz, therefore mitigating the need for
+the “restarts” they use.</p>
 <p>Of course, as discussed above, Newton-Schulz already implicitly
 provides Tikhonov regularisation, so
 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span>
