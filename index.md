@@ -17,13 +17,10 @@ I did my PhD at the University of Bristol from 2021-2025, supervised by Dr Laure
 ## Recent Blog Posts
 
 <ul>
-    <!-- <li>
-    <a href="blog/example.html"><strong>Example Blog Post</strong></a>
-    <br>
-    <span class="date">January 2026</span> - An example markdown file for a blog post.
-    </li> -->
     <li>
-        <strong>Blog coming soon...</strong>
+    <a href="blog/muon_ns_tikhonov/index.html"><strong>MuonTikh: Implicit and Explicit Tikhonov Regularisation in Muon</strong></a>
+    <br>
+    <span class="date">June 2026</span> - Newton-Schulz filters out small singular values from the gradient.
     </li>
 </ul>
 
