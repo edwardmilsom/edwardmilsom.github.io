@@ -1,11 +1,19 @@
 ---
 title: "MuonTikh: Implicit and Explicit Tikhonov Regularisation in Muon"
+author:
+  - Edward Milsom<sup>1</sup>
+  - Ben Anson<sup>2</sup>
+  - Xi Wang<sup>3</sup>
+  - Michael Murray<sup>1</sup>
+  - Wenzhi Zhong<sup>1</sup>
+affiliations:
+  - <sup>1</sup> University of Bath
+  - <sup>2</sup> University of Bristol
+  - <sup>3</sup> Johns Hopkins University
 date: 2026-06-02
 description: Newton-Schulz filters out small singular values from the gradient. Is this sometimes desirable, and how do we do this manually?
 
 ---
-
-Preliminary work in collaboration with Ben Anson (University of Bristol), Xi Wang (Johns Hopkins University), Michael Murray (University of Bath), and Wenzhi Zhong (University of Bath).
 
 ## Muon and the polar map
 Muon (Jordan et al. 2024) is a matrix-aware optimiser for neural networks. Conceptually, it seeks to apply the polar map to the gradient $G \in \mathbb{R}^{n \times m}$ of each weight matrix:
@@ -105,7 +113,7 @@ The Tikhonov regularisation mechanism we discuss in this blogpost is very simila
 
 Side note: by setting $\lambda=1$ in MuonTikh, due to the previously discussed coupling between the Frobenius normalisation step and the effective Tikhonov regularisation, one can see that Muon's Frobenius normalisation $\epsilon$ can itself be used to control the effective Tikhonov regularisation, but this is much messier than controlling $\lambda$ directly.
 
-So far, we have not been able to find any compelling empirical evidence that tuning $\lambda$ in Muon is particularly important. In fact, most of our preliminary experiments (not presented here because I don't have time — sorry!) seemed to suggest the exact polar map (i.e. $\lambda = 0$) performs best, which therefore reinforces the idea that we should design Newton-Schulz iterations which converge as quickly as possible. However, the findings in settings like reinforcement learning and finetuning were not so clear-cut (noisy or ambiguous results), and may warrant further investigation.
+So far, we have not been able to find any compelling empirical evidence that tuning $\lambda$ in Muon is particularly important. In fact, most of our preliminary experiments seemed to suggest the exact polar map (i.e. $\lambda = 0$) performs best, which therefore reinforces the idea that we should design Newton-Schulz iterations which converge as quickly as possible. However, the findings in settings like reinforcement learning and finetuning were not so clear-cut (noisy or ambiguous results), and may warrant further investigation.
 
 <hr>
 

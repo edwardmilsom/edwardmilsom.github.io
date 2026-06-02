@@ -17,6 +17,21 @@ a { color: #0033cc; text-decoration: underline; }
 a:hover { text-decoration: none; }
 hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 .date { font-size: 0.85em; color: #888; font-family: monospace; }
+.byline {
+    margin: -0.25rem 0 0.15rem;
+    font-size: 0.92rem;
+    color: #555;
+    letter-spacing: 0.02em;
+}
+.byline-authors {
+    font-weight: 700;
+}
+.affiliations {
+    margin: 0 0 0.35rem;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    color: #666;
+}
 
 /* Header Specifics */
 .header-container { display: flex; align-items: center; gap: 20px; }

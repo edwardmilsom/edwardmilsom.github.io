@@ -13,6 +13,14 @@ $endfor$
 $if(title)$
 <article>
 <h1>$title$</h1>
+$if(author)$
+<p class="byline">
+  <strong class="byline-authors">$for(author)$$author$$sep$, $endfor$</strong>
+</p>
+$endif$
+$if(affiliations)$
+<p class="affiliations">$for(affiliations)$$affiliations$$sep$; $endfor$</p>
+$endif$
 $if(date)$
 <p class="date">$date$</p>
 $endif$
